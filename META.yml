@@ -27,6 +27,7 @@ no_index:
     - t
     - xt
 requires:
+  English: 0
   Error::Pure: 0.15
   Exporter: 0
   IRI: 0

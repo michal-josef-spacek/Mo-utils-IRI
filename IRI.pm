@@ -4,6 +4,7 @@ use base qw(Exporter);
 use strict;
 use warnings;
 
+use English;
 use Error::Pure qw(err);
 use Readonly;
 use IRI;
@@ -20,7 +21,14 @@ sub check_iri {
 	}
 
 	my $value = $self->{$key};
-	my $iri = IRI->new($value);
+	my $iri = eval {
+		IRI->new($value);
+	};
+	if ($EVAL_ERROR) {
+		err "Parameter '".$key."' doesn't contain valid IRI.",
+			'Value', $value,
+		;
+	}
 	if (! $iri->can('scheme') || ! $iri->can('host') || ! $iri->scheme || ! $iri->host) {
 		err "Parameter '".$key."' doesn't contain valid IRI.",
 			'Value', $value,
