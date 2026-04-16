@@ -11,7 +11,7 @@ use IRI;
 
 Readonly::Array our @EXPORT_OK => qw(check_iri);
 
-our $VERSION = 0.03;
+our $VERSION = 0.04;
 
 sub check_iri {
 	my ($self, $key) = @_;
@@ -181,6 +181,6 @@ BSD 2-Clause License
 
 =head1 VERSION
 
-0.03
+0.04
 
 =cut
