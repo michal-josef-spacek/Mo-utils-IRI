@@ -1,6 +1,8 @@
 TODO
 ====
-2.
+2. The check "if (! $iri->scheme || ! $iri->host) {" isn't fine. This is valid
+   IRI, but... What am I checking?
+3.
 
 Applied
 =======
