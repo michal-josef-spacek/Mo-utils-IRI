@@ -2,6 +2,7 @@
  - Add test.
  - Improve usage of IRI constructor.
  - Remove obsolete code.
+ - Update copyright years.
 
 0.02 2025-07-08T14:54:54+02:00
  - Add support for errors from IRI module.
