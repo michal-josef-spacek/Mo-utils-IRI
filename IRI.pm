@@ -22,7 +22,7 @@ sub check_iri {
 
 	my $value = $self->{$key};
 	my $iri = eval {
-		IRI->new($value);
+		IRI->new('value' => $value);
 	};
 	if ($EVAL_ERROR) {
 		err "Parameter '".$key."' doesn't contain valid IRI.",
