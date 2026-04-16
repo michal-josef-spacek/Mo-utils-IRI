@@ -1,4 +1,5 @@
 0.03
+ - Add test.
  - Improve usage of IRI constructor.
  - Remove obsolete code.
 
