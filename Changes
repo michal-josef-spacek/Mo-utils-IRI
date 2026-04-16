@@ -1,5 +1,6 @@
 0.03
  - Improve usage of IRI constructor.
+ - Remove obsolete code.
 
 0.02 2025-07-08T14:54:54+02:00
  - Add support for errors from IRI module.

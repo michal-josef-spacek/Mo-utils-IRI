@@ -29,7 +29,7 @@ sub check_iri {
 			'Value', $value,
 		;
 	}
-	if (! $iri->can('scheme') || ! $iri->can('host') || ! $iri->scheme || ! $iri->host) {
+	if (! $iri->scheme || ! $iri->host) {
 		err "Parameter '".$key."' doesn't contain valid IRI.",
 			'Value', $value,
 		;
